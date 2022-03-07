@@ -4,5 +4,5 @@ void main(){
   // StringBuffer stringBuffer = StringBuffer();
   // stringBuffer.write(text1);
   // stringBuffer.write(text2);
-  print(text1 + "  " + text2);
+  print(text1 + " " + text2);
 }
