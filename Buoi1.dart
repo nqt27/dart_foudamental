@@ -1,8 +1,18 @@
+import 'dart:math';
+
 void main(){
-  var text1 = "Name: ";
-  var text2 = "Nguyen Quoc Toan";
-  // StringBuffer stringBuffer = StringBuffer();
-  // stringBuffer.write(text1);
-  // stringBuffer.write(text2);
-  print(text1 + " " + text2);
+  try{
+    String respone = request();
+    print(respone);
+  }
+  catch(e){
+    print(e);
+  }
+}
+String request(){
+  bool isError = Random().nextBool();
+  if(isError){
+    throw Exception("Lỗi");
+  }
+  return "Ok";
 }
