@@ -12,7 +12,7 @@ void main(){
 String request(){
   bool isError = Random().nextBool();
   if(isError){
-    throw Exception("Lỗi");
+    throw Exception("Error");
   }
   return "Ok";
 }
